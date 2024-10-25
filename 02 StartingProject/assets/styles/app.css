@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-base-100: rgb(62, 144, 143);
+  --color-base-200: rgb(38, 88, 87);
+}
+
 html {
   font-family: 'Roboto', open-sans;
 }
@@ -11,7 +16,7 @@ body {
 }
 
 header {
-  background: #023d6d;
+  background: var(--color-base-100);
   color: white;
   padding: 1rem;
   text-align: center;
@@ -24,10 +29,10 @@ header {
   margin: 2rem auto;
   width: 40rem;
   max-width: 90%;
-  border: 1px solid #023d6d;
+  border: 1px solid var(--color-base-100);
   border-radius: 10px;
   padding: 1rem;
-  color: #023d6d;
+  color: var(--color-base-100);
 }
 
 #results {
@@ -37,12 +42,12 @@ header {
 #calculator input {
   font: inherit;
   font-size: 3rem;
-  border: 2px solid #023d6d;
+  border: 2px solid var(--color-base-100);
   width: 10rem;
   padding: 0.15rem;
   margin: auto;
   display: block;
-  color: #023d6d;
+  color: var(--color-base-100);
   text-align: center;
 }
 
@@ -52,9 +57,9 @@ header {
 
 #calculator button {
   font: inherit;
-  background: #023d6d;
+  background: var(--color-base-100);
   color: white;
-  border: 1px solid #023d6d;
+  border: 1px solid var(--color-base-100);
   padding: 1rem;
   cursor: pointer;
 }
@@ -65,8 +70,8 @@ header {
 
 #calculator button:hover,
 #calculator button:active {
-  background: #084f88;
-  border-color: #084f88;
+  background: var(--color-base-200);
+  border-color: var(--color-base-200);
 }
 
 #calc-actions button {
